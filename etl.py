@@ -173,8 +173,8 @@ def process_log_data(spark, input_data, output_data):
                                           userAgent AS user_agent,
                                           year(datetime) AS year,
                                           month(datetime) AS month
-                                   FROM log_data JOIN songs
-                                   WHERE log_data.song = songs.title""")
+                                   FROM log_data
+                                   INNER JOIN songs ON log_data.song = songs.title""")
 
     # Write songplays table to parquet files partitioned by year and month
     songplays_table.write.partitionBy("year", "month").parquet(os.path.join(output_data, 'songplays'))
