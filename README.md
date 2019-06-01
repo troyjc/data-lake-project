@@ -13,7 +13,7 @@ There is one fact table named <tt>songplays</tt> and *four* dimension tables:
 - <tt>artists</tt>
 - <tt>time</tt>
 
-![ERD](docs/Data Lake ERD.png?raw=true)
+![ERD](https://github.com/troyjc/data-lake-project/blob/master/docs/Data%20Lake%20ERD.png)
 
 # Project Datasets
 
