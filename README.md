@@ -7,11 +7,7 @@ As their data engineer, I was tasked with building an ETL pipeline that extracts
 See file `etl.py` for the ETL code that processes the JSON logs on S3, processes them with Spark, and loads the data back into S3 as dimensional tables in Parquet format.
 
 # Star Schema
-There is one fact table named <tt>songplays</tt> and *four* dimension tables:
-- <tt>users</tt>
-- <tt>songs</tt>
-- <tt>artists</tt>
-- <tt>time</tt>
+There is one fact table <tt>songplays</tt> and four dimension tables:
 
 ![ERD](https://github.com/troyjc/data-lake-project/blob/master/docs/Data%20Lake%20ERD.png)
 
