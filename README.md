@@ -13,51 +13,7 @@ There is one fact table named <tt>songplays</tt> and *four* dimension tables:
 - <tt>artists</tt>
 - <tt>time</tt>
 
-| <tt>songplays</tt> |  |
-| ----------- | ----------- |
-| songplay_id | long |
-| start_time | timestamp |
-| user_id | string |
-| level | string |
-| song_id | string |
-| artist_id | string |
-| session_id | long |
-| location | string |
-| user_agent | string |
-
-| <tt>users</tt> |  |
-| ----------- | ----------- |
-| user_id | string |
-| first_name | string |
-| last_name | string |
-| gender | string |
-| level | string |
-
-| <tt>songs</tt> |  |
-| ----------- | ----------- |
-| song_id | string |
-| title | string |
-| artist_id | string |
-| year | long |
-| duration | double |
-
-| <tt>artists</tt> |  |
-| ----------- | ----------- |
-| artist_id | string |
-| name | string |
-| location | string |
-| latitude | double |
-| longitude | double |
-
-| <tt>time</tt> |  |
-| ----------- | ----------- |
-| start_time | timestamp |
-| hour | integer |
-| day | integer |
-| week | integer |
-| month | integer |
-| year | integer |
-| weekday | integer |
+![ERD](Data Lake ERD.png)
 
 # Project Datasets
 
